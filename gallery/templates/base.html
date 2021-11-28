@@ -21,3 +21,23 @@
     <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
   {% endblock %}
+
+</head>
+<body>
+   {% include "navbar.html" %}
+    {% block content %}
+
+
+
+    {%endblock%}
+
+
+    {% block scripts %}
+    <script>
+      function myFunction() {
+        var copyText = document.getElementById("link");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("Copied the text: " + copyText.value);
+      }
+    </script>
