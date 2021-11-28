@@ -3,5 +3,10 @@ from django.shortcuts import render, redirect
 from .models import Image, Location, Category
 
 # Create your views here.
-def welcome(request):
-    return HttpResponse('Photography web app')
+def index(request):
+    images = Image.get_all_images()
+    locations = Location.objects.all()
+    title = 'Sunsplash'
+
+    return render(request, 'index.html', {'title':title, 'images':images, 'locations':locations})
+
