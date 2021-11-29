@@ -51,8 +51,22 @@ Create .env file and paste paste the following filling where appropriate:
     PASSWORD = '<password>'
     DEBUG = True
 #### Run initial Migration
-    python3.6 manage.py makemigrations gallery
-    python3.6 manage.py migrate
+    python3.8 manage.py makemigrations gallery
+    python3.8 manage.py migrate
 #### Run the app
-    python3.6 manage.py runserver
-    Open terminal on localhost:8000
+    python3.8 manage.py runserver
+    Open terminal on localhost:8000  
+    
+  ## Known Bugs
+There are no known bugs so far
+## Technologies Used  
+* Python v3.8  
+* HTML
+* Bootstrap
+* Django  
+* Postgres  
+## Support and contact details
+In case of any problem while interacting with the web application, reach out to me at annalis.kirwa@student.moringaschool.com
+### License.
+MIT Copyright (c) 2021 **[MITlicense](LICENSE)**
+
